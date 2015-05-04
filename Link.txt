@@ -1,0 +1,1 @@
+https://visualstudiomagazine.com/Articles/2009/09/01/Eliminate-Database-Dependencies-in-Test-Driven-Development.aspx?Page=2
