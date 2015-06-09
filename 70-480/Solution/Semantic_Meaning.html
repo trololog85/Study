@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semantic Meaning</title>
+        <link rel="stylesheet" type="text/css" href="basic.css"/>
+    </head>
+    <body>
+        <header>  <!--Section reserved for headings, table of contents, search form, page logos.-->
+            <div id="logo">Page logo</div>
+            <nav> <!--Use to mark up collection of links to external elements or sections within the page.-->
+                <ul>
+                    <li><a href="#chapter-one">Chapter One</a></li>
+                    <li><a href="#chapter-two">Chapter Two</a></li>
+                    <li><a href="#chapter-three">Chapter Three</a></li>
+                </ul>
+            </nav>
+            <h1>The most important heading on this page.</h1>
+            <p>Supplementary information</p>
+        </header>
+        <main role="main"> <!--should contain the main content of the webpage. This is where unique content is placed. Only use one per page.-->
+            <article id="chapter-one"> <!--Should contain a piece of self-contain content, this includes articles, blog post,user comments-->
+                <header>
+                    <h1>Title of article</h1>
+                    <p>By John Smith</p>
+                </header>
+                <p>...</p>
+                <p>...</p>
+                <p>...</p>
+                <section> <!--Use to group elements of related content.-->
+                    <h2>Comments</h2>
+                    <article>
+                        <footer>
+                            <p>Posted by: Diego</p>
+                        </footer>
+                        <p>This was a great article</p>
+                    </article>
+                    <article>
+                        <footer>
+                            <p>Posted by: Charlie Candle</p>
+                        </footer>
+                        <p>Another question...</p>
+                    </article>
+                </section>
+            </article>
+            <article id="chapter-two">
+                <h1>How to use HMTL5 Sectioning Elements</h1>
+                <p>...</p>
+                <section> <!--Use to group elements of related content.-->
+                    <h2>The &lt;main&gt; Element</h2>
+                    <p>...</p>
+                </section>
+                <section>
+                    <h2>The &lt;article&gt; Element</h2>
+                    <p>...</p>
+                </section>
+                <section>
+                    <h2>The &lt;section&gt; Element</h2>
+                    <p>...</p>
+                </section>
+                ...
+            </article>
+            <article id="chapter-three">
+                <section>
+                    <header> <!--Section use to represent the introduction to an article or a web page. Usually asociated with the nearest section element-->
+                        <h1>Google buys Nest</h1>
+                        <p>Posted at 11:34am 13th January 2014</p>
+                    </header>
+                    <p>...</p>
+                    <p>...</p>
+                    <p>...</p>
+                    <footer> <!--Element to represent information about the author, copyright information.-->
+                        <address> <!--For representing contact information.-->
+                            By <a href="mailto:matt@example.com">Matt West</a>
+                        </address>
+                        <p>Copyright Matt West 2014</p>
+                    </footer>
+                </section>
+            </article>
+            <article id="chapter-four">
+                <h1>My blog post</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <aside> <!--Aside related to article content.-->
+                    <h1>Glossary</h1>
+                    <dl>
+                        <dt>Lorem</dt>
+                        <dd>ipsum dolor sit amet</dd>
+                    </dl>
+                </aside>
+            </article>
+            <aside>  <!--This aside is content related to the page.-->
+                <h2>Blogroll</h2>
+                <ul>
+                    <li><a href="#">My friend</a></li>
+                    <li><a href="#">My Other Friend</a></li>
+                    <li><a href="#">My Best Friend</a></li>
+                </ul>
+            </aside>
+        </main>
+    </body>
+</html>

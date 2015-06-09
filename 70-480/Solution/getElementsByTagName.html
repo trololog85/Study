@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation:getElementByTagName</title>
+    <link href="basic.css" rel="stylesheet" />
+    <script type="text/javascript" language="javascript">
+        window.onload = function () {
+            var button = document.getElementById("submitButton");
+
+            button.onclick = function() {
+                var paragraphs = document.getElementsByTagName("p");
+                alert(paragraphs.length);
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Certification Exam 70-480: Programming in HTML5 with Javascript and CSS3</h1>
+        <h2>getElementByTagName</h2>
+        <h2>Examples</h2>
+    </header>
+    <div id="outerDiv">
+        <p class="mainPara">Main Paragraph</p>
+        <ul>
+            <li>First Line Item</li>
+            <li>Second Line Item</li>
+            <li>Third Line Item</li>
+            <li>Fourth Line Item</li>
+        </ul>
+        <div id="innerDiv">
+            <p class="subPara" id="P1">Paragraph 1</p>
+            <p class="subPara" id="P2">Paragraph 2</p>
+            <p class="subPara" id="P3">Paragraph 3</p>
+            <p class="subPara" id="P4">Paragraph 4</p>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    Row 1
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Row 2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Row 3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Row 4
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Row 5
+                </td>
+            </tr>
+        </table>
+        <input type="text" />
+        <input id="submitButton" type="submit" value="Shows paragraphs quantity" />
+    </div>
+</body>
+</html>

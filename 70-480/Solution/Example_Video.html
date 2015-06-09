@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>Video Example</title>
+        <style>
+            img:hover {
+                cursor: pointer;
+            }
+        </style>
+        <script>
+            var video;
+            window.onload = function() {
+                video = document.getElementById("sampleVideo");
+            };
+
+            function play() {
+                video.play();
+            }
+
+            function pause() {
+                video.pause();
+            }
+
+            function back() {
+                video.currentTime -= 10;
+            }
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <video height="400" width="600" id="sampleVideo" type="audio/mp4">
+                        <source src="AchitectureInPracticeM01_high.mp4" />
+                    </video>
+                </td>
+                <td>
+                    <img id="backButton" src="back.png" onclick="back();" /><br/>
+                    <img id="playButton" src="button_blue_play.png" onclick="play();" /><br/>
+                    <img id="pauseButton" src="button_blue_pause.png" onclick="pause();">
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas example</title>
+        <style>
+            canvas {
+                border: 1px solid black;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                var drawingSurface = document.getElementById("drawingSurface");
+                var ctxt = drawingSurface.getContext("2d");
+
+                //LINES
+                /*ctxt.lineWidth = 5;
+                ctxt.strokeStyle = "green";
+                ctxt.lineCap = "round";
+
+                ctxt.beginPath();
+                ctxt.moveTo(10, 10);
+                ctxt.lineTo(225, 350);
+                ctxt.stroke();
+
+                ctxt.beginPath();
+                ctxt.moveTo(10, 10);
+                ctxt.lineTo(225, 350);
+                ctxt.lineTo(300, 10);
+                ctxt.lineTo(400, 350);
+                ctxt.stroke();*/
+
+                //ARCS
+                /*ctxt.beginPath();
+                ctxt.arc(150, 100, 75, 0, 2 * Math.PI, false);
+                ctxt.lineWidth = 25;
+                ctxt.strokeStyle = "#0f0";
+                ctxt.stroke();
+
+                ctxt.beginPath();
+                ctxt.arc(450, 100, 75, 1.5 * Math.PI, 2 * Math.PI, false);
+                ctxt.lineWidth = 25;
+                ctxt.strokeStyle = "blue";
+                ctxt.stroke();
+
+                ctxt.beginPath();
+                ctxt.arc(150, 300, 75, 1 * Math.PI, 1.5 * Math.PI, false);
+                ctxt.lineWidth = 25;
+                ctxt.strokeStyle = "red";
+                ctxt.stroke();
+
+                ctxt.beginPath();
+                ctxt.arc(450, 300, 75, .5 * Math.PI, 1 * Math.PI, false);
+                ctxt.lineWidth = 25;
+                ctxt.strokeStyle = "cyan";
+                ctxt.stroke();*/
+
+                //CUADRATIC ARCS
+                /*ctxt.beginPath();
+                ctxt.moveTo(10, 380);
+                ctxt.quadraticCurveTo(300, -250, 580, 380);
+                ctxt.lineWidth = 25;
+                ctxt.strokeStyle = "red";
+                ctxt.stroke();*/
+
+                //PATHS METHODS
+                /*ctxt.beginPath();
+                ctxt.arc(300, 200, 75, 1.75 * Math.PI, 1.25 * Math.PI, false);
+                ctxt.lineTo(150, 125);
+                ctxt.quadraticCurveTo(300, 0, 450, 125);
+                ctxt.lineTo(353, 144);
+                ctxt.strokeStyle = "blue";
+                ctxt.lineCap = "round";
+                ctxt.lineWidth = 10;
+                ctxt.stroke();*/
+
+                //RECT METHOD
+                /*ctxt.beginPath();
+                ctxt.rect(300, 200, 150, 75);
+                ctxt.stroke();*/
+
+                /*ctxt.beginPath();
+                var x, y;
+                x = 150;
+                y = 75;
+                ctxt.rect(300 - (x / 2), 200 - (y / 2), x, y);
+                /*ctxt.fillStyle = "blue";
+                ctxt.fill();*/
+                /*ctxt.fillStyle = "blue";
+                ctxt.fillRect(300-(x / 2), 200-(y / 2), x, y);
+                ctxt.stroke();*/
+
+                //GRADIENT
+                /*ctxt.lineWidth = 3;
+                ctxt.rect(150, 150, 200, 125);
+                var gradient = ctxt.createLinearGradient(150, 150, 200, 125);
+                gradient.addColorStop(0, "Black");
+                gradient.addColorStop(0.5, "Gray");
+                gradient.addColorStop(1, "White");
+                ctxt.fillStyle = gradient;
+                ctxt.fill();
+                ctxt.stroke();*/
+
+                /*ctxt.lineWidth = 3;
+                ctxt.rect(150, 150, 250, 175);
+                var gradient = ctxt.createRadialGradient(200, 200, 5, 250, 250, 100);
+                gradient.addColorStop(0, "red");
+                gradient.addColorStop(0.5, "orange");
+                gradient.addColorStop(1, "blue");
+                ctxt.fillStyle = gradient;
+                ctxt.fill();
+                ctxt.stroke();*/
+
+                //DRAWING TEXT
+                ctxt.strokeText("1. Text with default font", 100, 100);
+                
+                ctxt.font = "24px arial";
+                ctxt.strokeText("2. Text with altered font", 100, 125);
+
+                ctxt.font = "24px arial";
+                ctxt.strokeStyle = "Red";
+                ctxt.strokeText("3. Text with altered colored font.", 100, 160);
+
+                ctxt.font = "24px arial";
+                ctxt.strokeStyle = "Red";
+                ctxt.fillText("4. Text with altered colored font", 100, 185);
+
+                ctxt.font = "24px arial";
+                ctxt.textAlign = "center";
+                ctxt.fillStyle = "Red";
+                ctxt.fillText("5. Text with altered colored font Centered.", drawingSurface.width / 2,
+                    drawingSurface.width/2);
+            };
+        </script>
+    </head>
+    <body>
+        <canvas id="drawingSurface" width="600" height="400">
+            your browser does not support HTML5.
+        </canvas>
+    </body>
+</html>
