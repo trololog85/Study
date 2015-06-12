@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Apply styling to HTML elements: Applying Transform</title>
+    <link href="basic.css" rel="stylesheet" />
+    <script src="jquery-1.11.3.js"></script>
+    <style>
+        #orange1 {
+            height: 150px;
+            width: 225px;
+        }
+
+        .trans {
+            transform: scale(2);
+        }
+
+        .rotate {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Certification Exam 70-480: Programming in HTML5 with Javascript and CSS3</h1>
+        <h2>Applying Transform</h2>
+        <h2>Examples</h2>
+    </header>
+<div id="outerDiv">
+    <img id="orange1" src="orange.jpg" style="position: relative"/>
+    <br/>
+    <input type="button" id="rotateButton" value="Rotate"/>
+    <br/>
+    <input type="button" id="scaleButton" value="Scale"/>
+</div>
+    <script>
+        $("#scaleButton").click(function () {
+            $("#orange1").addClass("trans");
+        });
+
+        $("#rotateButton").click(function () {
+            $("#orange1").addClass("rotate");
+        });
+    </script>
+</body>
+</html>

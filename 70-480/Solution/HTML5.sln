@@ -76,6 +76,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalLibs", "ExternalLib
 		jquery-1.11.3.js = jquery-1.11.3.js
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective_3", "Objective_3", "{660E9629-B9FF-423C-9349-65FAFE88F2BE}"
+	ProjectSection(SolutionItems) = preProject
+		ApplyingTransform.html = ApplyingTransform.html
+		ChangeLocation.html = ChangeLocation.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{0A04A971-A2E9-4F0E-ADD5-BFA460E60708} = {20857950-A908-4534-A430-70361098BEC7}
 		{4E2354AA-6057-466C-96D9-6BE95057048F} = {0ED862C4-0A7D-4093-A579-ABB6C50D8568}
 		{9F43AA66-C070-417F-B88E-18D1FEFC013A} = {0ED862C4-0A7D-4093-A579-ABB6C50D8568}
+		{660E9629-B9FF-423C-9349-65FAFE88F2BE} = {0ED862C4-0A7D-4093-A579-ABB6C50D8568}
 		{12D2B6DA-1B4B-4CB4-9FED-61F28751640B} = {1BEC9CE3-7A31-48E4-8319-522165872CCF}
 	EndGlobalSection
 EndGlobal
