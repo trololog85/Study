@@ -2,10 +2,17 @@
 <html>
 <head>
     <title>DOM Manipulation:getElementsByClassName</title>
-    <link href="basic.css" rel="stylesheet" />
+    <link href="basic.css" rel="stylesheet"/>
+    <script src="jquery-1.11.3.js"></script>
     <script type="text/javascript" language="javascript">
-        window.onload = function () {
+        window.onload = function() {
             var button = document.getElementById("submitButton");
+            var jButton = document.getElementById("jqueryButton");
+
+            jButton.onclick = function () {
+                var paragraphs = $(".subPara");
+                alert("Using jquery!!! <p> elements with class subPara: " + paragraphs.length);
+            }
 
             button.onclick = function() {
                 var paragraphs = document.getElementsByClassName("subPara");

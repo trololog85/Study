@@ -16,7 +16,7 @@
             $scope.title = "loading question...";
             $scope.options = [];
 
-            $http.get("/api/trivia").success(function(data, status, headers, config) {
+            $http.get('/api/trivia').success(function(data, status, headers, config) {
                 $scope.options = data.options;
                 $scope.title = data.title;
                 $scope.answered = false;
@@ -31,8 +31,8 @@
             $scope.working = true;
             $scope.answered = true;
 
-            $http.post("/api/trivia", { "question": option.questionId, "option": option.Id }).success(function(data, status, headers, config) {
-                $scope.correctAnswer = (data == "true");
+            $http.post('/api/trivia', { 'questionId': option.questionId, 'optionId': option.id }).success(function(data, status, headers, config) {
+                $scope.correctAnswer = angular.equals(data,true);
                 $scope.working = false;
             }).error(function(data, status, headers, config) {
                 $scope.title = "Oops...something went wrong";
