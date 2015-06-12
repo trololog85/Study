@@ -82,6 +82,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective_3", "Objective_3"
 		ChangeLocation.html = ChangeLocation.html
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercise", "Exercise", "{BAAC0CF5-DF7C-4383-961F-6791777B9ADF}"
+	ProjectSection(SolutionItems) = preProject
+		DynamicSurvey.html = DynamicSurvey.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Objective_4", "Objective_4", "{C191877E-E099-452A-8DED-C8EC8E1092DE}"
+	ProjectSection(SolutionItems) = preProject
+		AppCacheAPI.html = AppCacheAPI.html
+		GeolocationAPI.html = GeolocationAPI.html
+		StorageAPI.html = StorageAPI.html
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +105,8 @@ Global
 		{4E2354AA-6057-466C-96D9-6BE95057048F} = {0ED862C4-0A7D-4093-A579-ABB6C50D8568}
 		{9F43AA66-C070-417F-B88E-18D1FEFC013A} = {0ED862C4-0A7D-4093-A579-ABB6C50D8568}
 		{660E9629-B9FF-423C-9349-65FAFE88F2BE} = {0ED862C4-0A7D-4093-A579-ABB6C50D8568}
+		{C191877E-E099-452A-8DED-C8EC8E1092DE} = {0ED862C4-0A7D-4093-A579-ABB6C50D8568}
 		{12D2B6DA-1B4B-4CB4-9FED-61F28751640B} = {1BEC9CE3-7A31-48E4-8319-522165872CCF}
+		{BAAC0CF5-DF7C-4383-961F-6791777B9ADF} = {660E9629-B9FF-423C-9349-65FAFE88F2BE}
 	EndGlobalSection
 EndGlobal
