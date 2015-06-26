@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en" manifest="webApp.appcache">
+<head>
+    <meta charset="utf-8" />
+    <title>Implement HTML5 APIs</title>
+    <link href="basic.css" rel="stylesheet" />
+    <script src="jquery-1.11.3.js"></script>
+    <style>
+        section {
+            margin-top: 15px;
+        }
+    </style>
+    <script type="text/javascript" language="javascript">
+    window.onload = function () {
+        var geoLocator = window.navigator.geolocation;
+        var posOptions = { enableHighAccuracy: true, timeout: 45000 };
+        geoLocator.getCurrentPosition(successPosition, errorPosition, posOptions);
+    }
+
+    function successPosition(pos) {
+        var sp = document.createElement("p");
+        var div = $("#geoResults")[0];
+        sp.innerText = "Latitude: " + pos.coords.latitude + " Longitude: " + pos.coords.longitude;
+        div.appendChild(sp);
+    }
+
+    function errorPosition(err) {
+        var sp = document.createElement("p");
+        sp.innerText = "error: " + err.message + " code: " + err.code;
+        $("geoResults")[0].appendChild(sp);
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Certification Exam 70-480: Programming in HTML5 with Javascript and CSS3</h1>
+        <h2>Implement HTML5 APIs - GeoLocationAPI</h2>
+        <h2>Examples</h2>
+    </header>
+<div id="geoResults">
+    <p>Current Location is:</p>
+</div>
+</body>
+</html>
